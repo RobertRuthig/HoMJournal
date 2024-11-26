@@ -64,6 +64,8 @@ route.post("/createEntry", async (req, res) => {
 // Currently this just logs the entry to be edited
 route.get("/editEntry/:id", async (req, res) => {
     const entry = await Entry.findById(req.params.id);
+    res.render(editEntry)
+    entry.email = "this changed"
     console.log(entry);
     res.send(entry);
 });
