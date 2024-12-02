@@ -6,7 +6,7 @@
     <img src="img/SE-GitHub-image.png" alt="NCHS Logo" />
     <h1>Habits of Mind Journal Entry</h1>
     <div>
-        <label>Date <input type="date" class="date" /></label>
+        <label>Date <input type="date" class="date" /><%entry.date%></label>
 
         <fieldset>
             <legend>Habit of Mind:</legend>
@@ -19,7 +19,7 @@
             <br/>
             <% } %>
             
-        </fieldset>
+        </fieldset> 
 
         <label>Journal Entry <textarea class="content">My Journal Entry</textarea></label>
         <input type="submit" class="submit" value="Submit" />
